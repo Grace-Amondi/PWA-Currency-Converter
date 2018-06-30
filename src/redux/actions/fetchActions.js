@@ -37,13 +37,13 @@ export const fetchCurrencies = (baseCurrency) => {
 };
 
 function fetchRatesData(baseCurrency) {
-    const URL = `https://api.fixer.io/latest?access_key=${api_key}&base=${baseCurrency}`;
+    const URL = `http://data.fixer.io/api/latest?access_key=${api_key}&base=${baseCurrency}`;
 
     return fetchData(URL);
 }
 
 function fetchYesterdayRatesData(baseCurrency, yesterdayDate) {
-    const URL = `https://api.fixer.io/${yesterdayDate}?access_key=${api_key}&base=${baseCurrency}`;
+    const URL = `http://data.fixer.io/api/${yesterdayDate}?access_key=${api_key}&base=${baseCurrency}`;
 
     return fetchData(URL);
 }
