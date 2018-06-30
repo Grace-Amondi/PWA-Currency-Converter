@@ -1,0 +1,30 @@
+.converted-row {
+    padding: 15px;
+    background: #3c485e;
+    border-bottom: 1px solid #475266;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    word-spacing: 10px;
+}
+
+.converted-row.error-row {
+    word-spacing: 0;
+}
+
+.converted-row small {
+    color: #a2afb9;
+}
+
+.converted-row:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.converted-row:last-child {
+    border-radius: 0 0 5px 5px;
+    border-bottom: none;
+}
+
+.converted-row:only-child {
+    border-radius: 5px;
+}
