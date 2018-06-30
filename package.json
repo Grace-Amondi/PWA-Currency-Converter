@@ -1,7 +1,7 @@
 {
   "name": "react-currency-converter",
   "version": "0.1.0",
-  "homepage": "https://grace-amondi.github.io/pwa-currency-converter/",
+  "homepage": "https://grace-amondi.github.io/PWA-Currency-Converter/",
   "private": false,
   "dependencies": {
     "react": "^15.5.4",
@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run build&&gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }
